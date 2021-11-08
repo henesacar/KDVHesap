@@ -9,5 +9,7 @@ public class Hesap {
         int tutar = scn.nextInt();
         double snc = (tutar>=1000)? tutar*KKDV : tutar*KDV;
         System.out.println("Hesaplanan KDV miktarı: " +snc);
+        double ttl = tutar+snc;
+        System.out.println("KDV dahil tutar: " +ttl);
     }
 }
